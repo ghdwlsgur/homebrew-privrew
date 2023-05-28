@@ -5,20 +5,20 @@
 class Privrew < Formula
   desc "It is a CLI tool that makes it easier to deploy private repositories."
   homepage "https://github.com/ghdwlsgur/privrew"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ghdwlsgur/privrew/releases/download/v0.0.2/privrew_0.0.2_Darwin_arm64.tar.gz"
-      sha256 "bfbb1cf9fe894d8a34060e5573f977497349ebb4cbb3bc81cbdf25e021f56a3d"
+      url "https://github.com/ghdwlsgur/privrew/releases/download/v0.0.3/privrew_0.0.3_Darwin_arm64.tar.gz"
+      sha256 "40691f53fb77908d62c381e6ed5d8a4c7bb0e2647988c1c445ee8ad1cd49fd69"
 
       def install
         bin.install "privrew"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ghdwlsgur/privrew/releases/download/v0.0.2/privrew_0.0.2_Darwin_x86_64.tar.gz"
-      sha256 "caf5c5262b1e7187d30770f370ce8377ab69a3404ddfb214abbfbf0d83f93cba"
+      url "https://github.com/ghdwlsgur/privrew/releases/download/v0.0.3/privrew_0.0.3_Darwin_x86_64.tar.gz"
+      sha256 "0e959e9940759d2dd503b2dc75d088639a57f1eb15a7ac144cc1f0e2d399cfaf"
 
       def install
         bin.install "privrew"
@@ -28,16 +28,16 @@ class Privrew < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghdwlsgur/privrew/releases/download/v0.0.2/privrew_0.0.2_Linux_arm64.tar.gz"
-      sha256 "70fe07aad8e4cb2ebf3289215580dda74bad533a3a91e78137a58b8bf0164bc7"
+      url "https://github.com/ghdwlsgur/privrew/releases/download/v0.0.3/privrew_0.0.3_Linux_arm64.tar.gz"
+      sha256 "a2d83cbf3f8928a2739db6f8bc2a8f28999c7f07fe19a4b823134e1cb4c8bfd0"
 
       def install
         bin.install "privrew"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ghdwlsgur/privrew/releases/download/v0.0.2/privrew_0.0.2_Linux_x86_64.tar.gz"
-      sha256 "1f774bb7d0a2f1b122639519ffa52fe2c61aec70e04f5aee744a6576e9143a15"
+      url "https://github.com/ghdwlsgur/privrew/releases/download/v0.0.3/privrew_0.0.3_Linux_x86_64.tar.gz"
+      sha256 "e8d2de8808bbf0759440749bdfc1b4459954b60befaf79f15ff3672bfaa15bac"
 
       def install
         bin.install "privrew"
